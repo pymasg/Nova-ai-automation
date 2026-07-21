@@ -25,7 +25,7 @@ try:
     wait = WebDriverWait(web, 10)
     email_entry = wait.until(EC.presence_of_all_elements_located(
         (By.NAME, 'email')))
-    email_entry[0].send_keys('ahsanpymaster@gmail.com')
+    email_entry[0].send_keys('abc@gmail.com')
 except Exception as e:
     print(f"{e}")
 
@@ -34,7 +34,7 @@ try:
     password_entry = wait.until(EC.presence_of_all_elements_located(
         (By.NAME, "password")))
 
-    password_entry[0].send_keys('PyAhsanRk1122')
+    password_entry[0].send_keys('yourpasswords')
     password_entry[0].submit()
     sleep(10)
 except Exception as e:
